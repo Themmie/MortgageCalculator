@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  FormuleSelectionViewController.m
 //  Homemortgagecalculator
 //
 //  Created by Tyler Hemmie on 7/21/14.
 //  Copyright (c) 2014 Frozen Fire Studios. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FormuleSelectionViewController.h"
 
-@interface ViewController ()
+@interface FormuleSelectionViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FormuleSelectionViewController
 
 - (void)viewDidLoad
 {

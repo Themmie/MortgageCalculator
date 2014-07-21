@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FormuleSelectionViewController.h
 //  Homemortgagecalculator
 //
 //  Created by Tyler Hemmie on 7/21/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FormuleSelectionViewController : UIViewController
 
 @end
