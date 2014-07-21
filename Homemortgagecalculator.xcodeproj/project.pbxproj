@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DAC238C197D951100F26A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238B197D951100F26A67 /* Foundation.framework */; };
+		5DAC238E197D951100F26A67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238D197D951100F26A67 /* CoreGraphics.framework */; };
+		5DAC2390197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
+		5DAC2396197D951100F26A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC2394197D951100F26A67 /* InfoPlist.strings */; };
+		5DAC2398197D951100F26A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2397197D951100F26A67 /* main.m */; };
+		5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC239B197D951100F26A67 /* AppDelegate.m */; };
+		5DAC239F197D951100F26A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC239D197D951100F26A67 /* Main.storyboard */; };
+		5DAC23A2197D951100F26A67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23A1197D951100F26A67 /* ViewController.m */; };
+		5DAC23A4197D951100F26A67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC23A3197D951100F26A67 /* Images.xcassets */; };
+		5DAC23AB197D951100F26A67 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC23AA197D951100F26A67 /* XCTest.framework */; };
+		5DAC23AC197D951100F26A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238B197D951100F26A67 /* Foundation.framework */; };
+		5DAC23AD197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
+		5DAC23B5197D951100F26A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC23B3197D951100F26A67 /* InfoPlist.strings */; };
+		5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DAC23AE197D951100F26A67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DAC2380197D951100F26A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DAC2387197D951100F26A67;
+			remoteInfo = Homemortgagecalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DAC2388197D951100F26A67 /* Homemortgagecalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homemortgagecalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAC238B197D951100F26A67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DAC238D197D951100F26A67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DAC238F197D951100F26A67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DAC2393197D951100F26A67 /* Homemortgagecalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homemortgagecalculator-Info.plist"; sourceTree = "<group>"; };
+		5DAC2395197D951100F26A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DAC2397197D951100F26A67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DAC2399197D951100F26A67 /* Homemortgagecalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homemortgagecalculator-Prefix.pch"; sourceTree = "<group>"; };
+		5DAC239A197D951100F26A67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DAC239B197D951100F26A67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5DAC239E197D951100F26A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DAC23A0197D951100F26A67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5DAC23A1197D951100F26A67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5DAC23A3197D951100F26A67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DAC23A9197D951100F26A67 /* HomemortgagecalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomemortgagecalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAC23AA197D951100F26A67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5DAC23B2197D951100F26A67 /* HomemortgagecalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomemortgagecalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		5DAC23B4197D951100F26A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomemortgagecalculatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DAC2385197D951100F26A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC238E197D951100F26A67 /* CoreGraphics.framework in Frameworks */,
+				5DAC2390197D951100F26A67 /* UIKit.framework in Frameworks */,
+				5DAC238C197D951100F26A67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAC23A6197D951100F26A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC23AB197D951100F26A67 /* XCTest.framework in Frameworks */,
+				5DAC23AD197D951100F26A67 /* UIKit.framework in Frameworks */,
+				5DAC23AC197D951100F26A67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DAC237F197D951100F26A67 = {
+			isa = PBXGroup;
+			children = (
+				5DAC2391197D951100F26A67 /* Homemortgagecalculator */,
+				5DAC23B0197D951100F26A67 /* HomemortgagecalculatorTests */,
+				5DAC238A197D951100F26A67 /* Frameworks */,
+				5DAC2389197D951100F26A67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DAC2389197D951100F26A67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC2388197D951100F26A67 /* Homemortgagecalculator.app */,
+				5DAC23A9197D951100F26A67 /* HomemortgagecalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DAC238A197D951100F26A67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC238B197D951100F26A67 /* Foundation.framework */,
+				5DAC238D197D951100F26A67 /* CoreGraphics.framework */,
+				5DAC238F197D951100F26A67 /* UIKit.framework */,
+				5DAC23AA197D951100F26A67 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DAC2391197D951100F26A67 /* Homemortgagecalculator */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC239A197D951100F26A67 /* AppDelegate.h */,
+				5DAC239B197D951100F26A67 /* AppDelegate.m */,
+				5DAC239D197D951100F26A67 /* Main.storyboard */,
+				5DAC23A0197D951100F26A67 /* ViewController.h */,
+				5DAC23A1197D951100F26A67 /* ViewController.m */,
+				5DAC23A3197D951100F26A67 /* Images.xcassets */,
+				5DAC2392197D951100F26A67 /* Supporting Files */,
+			);
+			path = Homemortgagecalculator;
+			sourceTree = "<group>";
+		};
+		5DAC2392197D951100F26A67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC2393197D951100F26A67 /* Homemortgagecalculator-Info.plist */,
+				5DAC2394197D951100F26A67 /* InfoPlist.strings */,
+				5DAC2397197D951100F26A67 /* main.m */,
+				5DAC2399197D951100F26A67 /* Homemortgagecalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DAC23B0197D951100F26A67 /* HomemortgagecalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */,
+				5DAC23B1197D951100F26A67 /* Supporting Files */,
+			);
+			path = HomemortgagecalculatorTests;
+			sourceTree = "<group>";
+		};
+		5DAC23B1197D951100F26A67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC23B2197D951100F26A67 /* HomemortgagecalculatorTests-Info.plist */,
+				5DAC23B3197D951100F26A67 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DAC2387197D951100F26A67 /* Homemortgagecalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAC23BA197D951100F26A67 /* Build configuration list for PBXNativeTarget "Homemortgagecalculator" */;
+			buildPhases = (
+				5DAC2384197D951100F26A67 /* Sources */,
+				5DAC2385197D951100F26A67 /* Frameworks */,
+				5DAC2386197D951100F26A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homemortgagecalculator;
+			productName = Homemortgagecalculator;
+			productReference = 5DAC2388197D951100F26A67 /* Homemortgagecalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DAC23A8197D951100F26A67 /* HomemortgagecalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAC23BD197D951100F26A67 /* Build configuration list for PBXNativeTarget "HomemortgagecalculatorTests" */;
+			buildPhases = (
+				5DAC23A5197D951100F26A67 /* Sources */,
+				5DAC23A6197D951100F26A67 /* Frameworks */,
+				5DAC23A7197D951100F26A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DAC23AF197D951100F26A67 /* PBXTargetDependency */,
+			);
+			name = HomemortgagecalculatorTests;
+			productName = HomemortgagecalculatorTests;
+			productReference = 5DAC23A9197D951100F26A67 /* HomemortgagecalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DAC2380197D951100F26A67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Frozen Fire Studios";
+				TargetAttributes = {
+					5DAC23A8197D951100F26A67 = {
+						TestTargetID = 5DAC2387197D951100F26A67;
+					};
+				};
+			};
+			buildConfigurationList = 5DAC2383197D951100F26A67 /* Build configuration list for PBXProject "Homemortgagecalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DAC237F197D951100F26A67;
+			productRefGroup = 5DAC2389197D951100F26A67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DAC2387197D951100F26A67 /* Homemortgagecalculator */,
+				5DAC23A8197D951100F26A67 /* HomemortgagecalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DAC2386197D951100F26A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC23A4197D951100F26A67 /* Images.xcassets in Resources */,
+				5DAC2396197D951100F26A67 /* InfoPlist.strings in Resources */,
+				5DAC239F197D951100F26A67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAC23A7197D951100F26A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC23B5197D951100F26A67 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DAC2384197D951100F26A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC23A2197D951100F26A67 /* ViewController.m in Sources */,
+				5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */,
+				5DAC2398197D951100F26A67 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAC23A5197D951100F26A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DAC23AF197D951100F26A67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DAC2387197D951100F26A67 /* Homemortgagecalculator */;
+			targetProxy = 5DAC23AE197D951100F26A67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DAC2394197D951100F26A67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAC2395197D951100F26A67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DAC239D197D951100F26A67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAC239E197D951100F26A67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DAC23B3197D951100F26A67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAC23B4197D951100F26A67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DAC23B8197D951100F26A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5DAC23B9197D951100F26A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DAC23BB197D951100F26A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
+				INFOPLIST_FILE = "Homemortgagecalculator/Homemortgagecalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DAC23BC197D951100F26A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
+				INFOPLIST_FILE = "Homemortgagecalculator/Homemortgagecalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5DAC23BE197D951100F26A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homemortgagecalculator.app/Homemortgagecalculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomemortgagecalculatorTests/HomemortgagecalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5DAC23BF197D951100F26A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homemortgagecalculator.app/Homemortgagecalculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
+				INFOPLIST_FILE = "HomemortgagecalculatorTests/HomemortgagecalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DAC2383197D951100F26A67 /* Build configuration list for PBXProject "Homemortgagecalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAC23B8197D951100F26A67 /* Debug */,
+				5DAC23B9197D951100F26A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAC23BA197D951100F26A67 /* Build configuration list for PBXNativeTarget "Homemortgagecalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAC23BB197D951100F26A67 /* Debug */,
+				5DAC23BC197D951100F26A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5DAC23BD197D951100F26A67 /* Build configuration list for PBXNativeTarget "HomemortgagecalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAC23BE197D951100F26A67 /* Debug */,
+				5DAC23BF197D951100F26A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DAC2380197D951100F26A67 /* Project object */;
+}
