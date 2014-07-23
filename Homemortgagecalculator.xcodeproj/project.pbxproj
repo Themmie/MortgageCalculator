@@ -14,13 +14,14 @@
 		5DAC2398197D951100F26A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2397197D951100F26A67 /* main.m */; };
 		5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC239B197D951100F26A67 /* AppDelegate.m */; };
 		5DAC239F197D951100F26A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC239D197D951100F26A67 /* Main.storyboard */; };
-		5DAC23A2197D951100F26A67 /* FormuleSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23A1197D951100F26A67 /* FormuleSelectionViewController.m */; };
+		5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23A1197D951100F26A67 /* FormulaListViewController.m */; };
 		5DAC23A4197D951100F26A67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC23A3197D951100F26A67 /* Images.xcassets */; };
 		5DAC23AB197D951100F26A67 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC23AA197D951100F26A67 /* XCTest.framework */; };
 		5DAC23AC197D951100F26A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238B197D951100F26A67 /* Foundation.framework */; };
 		5DAC23AD197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
 		5DAC23B5197D951100F26A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC23B3197D951100F26A67 /* InfoPlist.strings */; };
 		5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */; };
+		5DAC2403197DE7E200F26A67 /* FormulaViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		5DAC239A197D951100F26A67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DAC239B197D951100F26A67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5DAC239E197D951100F26A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5DAC23A0197D951100F26A67 /* FormuleSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormuleSelectionViewController.h; sourceTree = "<group>"; };
-		5DAC23A1197D951100F26A67 /* FormuleSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormuleSelectionViewController.m; sourceTree = "<group>"; };
+		5DAC23A0197D951100F26A67 /* FormulaListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaListViewController.h; sourceTree = "<group>"; };
+		5DAC23A1197D951100F26A67 /* FormulaListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaListViewController.m; sourceTree = "<group>"; };
 		5DAC23A3197D951100F26A67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5DAC23A9197D951100F26A67 /* HomemortgagecalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomemortgagecalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAC23AA197D951100F26A67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5DAC23B2197D951100F26A67 /* HomemortgagecalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomemortgagecalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		5DAC23B4197D951100F26A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomemortgagecalculatorTests.m; sourceTree = "<group>"; };
+		5DAC2401197DE7E200F26A67 /* FormulaViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormulaViewTableViewController.h; sourceTree = "<group>"; };
+		5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaViewTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,10 @@
 				5DAC239A197D951100F26A67 /* AppDelegate.h */,
 				5DAC239B197D951100F26A67 /* AppDelegate.m */,
 				5DAC239D197D951100F26A67 /* Main.storyboard */,
-				5DAC23A0197D951100F26A67 /* FormuleSelectionViewController.h */,
-				5DAC23A1197D951100F26A67 /* FormuleSelectionViewController.m */,
+				5DAC23A0197D951100F26A67 /* FormulaListViewController.h */,
+				5DAC23A1197D951100F26A67 /* FormulaListViewController.m */,
+				5DAC2401197DE7E200F26A67 /* FormulaViewTableViewController.h */,
+				5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */,
 				5DAC23A3197D951100F26A67 /* Images.xcassets */,
 				5DAC2392197D951100F26A67 /* Supporting Files */,
 			);
@@ -249,8 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DAC23A2197D951100F26A67 /* FormuleSelectionViewController.m in Sources */,
+				5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */,
 				5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */,
+				5DAC2403197DE7E200F26A67 /* FormulaViewTableViewController.m in Sources */,
 				5DAC2398197D951100F26A67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +462,7 @@
 				5DAC23BC197D951100F26A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DAC23BD197D951100F26A67 /* Build configuration list for PBXNativeTarget "HomemortgagecalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				5DAC23BF197D951100F26A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
