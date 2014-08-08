@@ -6,12 +6,15 @@
 //  Copyright (c) 2014 Frozen Fire Studios. All rights reserved.
 //
 
+#import <Crashlytics/Crashlytics.h>
 #import "AppDelegate.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Crashlytics startWithAPIKey:@"feace477940cb0492e23d078ff7ac8d9475af970"];
+
     // Override point for customization after application launch.
     
     return YES;

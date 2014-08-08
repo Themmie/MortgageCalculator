@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1F30BA1992DF0300F1074D /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */; };
+		5D1F30BD19930B8E00F1074D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30BC19930B8E00F1074D /* CustomTableViewCell.m */; };
+		5D1F30C319930BEC00F1074D /* ToggleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30C219930BEC00F1074D /* ToggleTableViewCell.m */; };
+		5D2378EE19943BA100EFB5BB /* THCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2378ED19943BA100EFB5BB /* THCalculator.m */; };
+		5D2378F019943BCB00EFB5BB /* THCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2378EF19943BCB00EFB5BB /* THCalculatorTests.m */; };
+		5D2378F219945FA600EFB5BB /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2378F119945EF100EFB5BB /* Crashlytics.framework */; };
 		5DAC238C197D951100F26A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238B197D951100F26A67 /* Foundation.framework */; };
 		5DAC238E197D951100F26A67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238D197D951100F26A67 /* CoreGraphics.framework */; };
 		5DAC2390197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
@@ -21,7 +27,8 @@
 		5DAC23AD197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
 		5DAC23B5197D951100F26A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC23B3197D951100F26A67 /* InfoPlist.strings */; };
 		5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */; };
-		5DAC2403197DE7E200F26A67 /* FormulaViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */; };
+		5DAC2403197DE7E200F26A67 /* FormulaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2402197DE7E200F26A67 /* FormulaTableViewController.m */; };
+		5DAC24061981B5AF00F26A67 /* THVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC24051981B5AF00F26A67 /* THVariable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1F30B81992DF0300F1074D /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
+		5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
+		5D1F30BB19930B8E00F1074D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		5D1F30BC19930B8E00F1074D /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		5D1F30C119930BEC00F1074D /* ToggleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleTableViewCell.h; sourceTree = "<group>"; };
+		5D1F30C219930BEC00F1074D /* ToggleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleTableViewCell.m; sourceTree = "<group>"; };
+		5D2378EC19943B7A00EFB5BB /* THCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCalculator.h; sourceTree = "<group>"; };
+		5D2378ED19943BA100EFB5BB /* THCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCalculator.m; sourceTree = "<group>"; };
+		5D2378EF19943BCB00EFB5BB /* THCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCalculatorTests.m; sourceTree = "<group>"; };
+		5D2378F119945EF100EFB5BB /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5DAC2388197D951100F26A67 /* Homemortgagecalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homemortgagecalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAC238B197D951100F26A67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DAC238D197D951100F26A67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +71,10 @@
 		5DAC23B2197D951100F26A67 /* HomemortgagecalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomemortgagecalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		5DAC23B4197D951100F26A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomemortgagecalculatorTests.m; sourceTree = "<group>"; };
-		5DAC2401197DE7E200F26A67 /* FormulaViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormulaViewTableViewController.h; sourceTree = "<group>"; };
-		5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaViewTableViewController.m; sourceTree = "<group>"; };
+		5DAC2401197DE7E200F26A67 /* FormulaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormulaTableViewController.h; sourceTree = "<group>"; };
+		5DAC2402197DE7E200F26A67 /* FormulaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaTableViewController.m; sourceTree = "<group>"; };
+		5DAC24041981B5AF00F26A67 /* THVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVariable.h; sourceTree = "<group>"; };
+		5DAC24051981B5AF00F26A67 /* THVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVariable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2378F219945FA600EFB5BB /* Crashlytics.framework in Frameworks */,
 				5DAC238E197D951100F26A67 /* CoreGraphics.framework in Frameworks */,
 				5DAC2390197D951100F26A67 /* UIKit.framework in Frameworks */,
 				5DAC238C197D951100F26A67 /* Foundation.framework in Frameworks */,
@@ -104,6 +124,7 @@
 		5DAC238A197D951100F26A67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D2378F119945EF100EFB5BB /* Crashlytics.framework */,
 				5DAC238B197D951100F26A67 /* Foundation.framework */,
 				5DAC238D197D951100F26A67 /* CoreGraphics.framework */,
 				5DAC238F197D951100F26A67 /* UIKit.framework */,
@@ -120,8 +141,18 @@
 				5DAC239D197D951100F26A67 /* Main.storyboard */,
 				5DAC23A0197D951100F26A67 /* FormulaListViewController.h */,
 				5DAC23A1197D951100F26A67 /* FormulaListViewController.m */,
-				5DAC2401197DE7E200F26A67 /* FormulaViewTableViewController.h */,
-				5DAC2402197DE7E200F26A67 /* FormulaViewTableViewController.m */,
+				5DAC2401197DE7E200F26A67 /* FormulaTableViewController.h */,
+				5DAC2402197DE7E200F26A67 /* FormulaTableViewController.m */,
+				5D1F30B81992DF0300F1074D /* BasicTableViewCell.h */,
+				5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */,
+				5D1F30BB19930B8E00F1074D /* CustomTableViewCell.h */,
+				5D1F30BC19930B8E00F1074D /* CustomTableViewCell.m */,
+				5D1F30C119930BEC00F1074D /* ToggleTableViewCell.h */,
+				5D1F30C219930BEC00F1074D /* ToggleTableViewCell.m */,
+				5DAC24041981B5AF00F26A67 /* THVariable.h */,
+				5DAC24051981B5AF00F26A67 /* THVariable.m */,
+				5D2378EC19943B7A00EFB5BB /* THCalculator.h */,
+				5D2378ED19943BA100EFB5BB /* THCalculator.m */,
 				5DAC23A3197D951100F26A67 /* Images.xcassets */,
 				5DAC2392197D951100F26A67 /* Supporting Files */,
 			);
@@ -143,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */,
+				5D2378EF19943BCB00EFB5BB /* THCalculatorTests.m */,
 				5DAC23B1197D951100F26A67 /* Supporting Files */,
 			);
 			path = HomemortgagecalculatorTests;
@@ -254,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1F30BA1992DF0300F1074D /* BasicTableViewCell.m in Sources */,
+				5D1F30BD19930B8E00F1074D /* CustomTableViewCell.m in Sources */,
+				5D2378EE19943BA100EFB5BB /* THCalculator.m in Sources */,
 				5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */,
 				5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */,
-				5DAC2403197DE7E200F26A67 /* FormulaViewTableViewController.m in Sources */,
+				5D1F30C319930BEC00F1074D /* ToggleTableViewCell.m in Sources */,
+				5DAC2403197DE7E200F26A67 /* FormulaTableViewController.m in Sources */,
+				5DAC24061981B5AF00F26A67 /* THVariable.m in Sources */,
 				5DAC2398197D951100F26A67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */,
+				5D2378F019943BCB00EFB5BB /* THCalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +420,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
 				INFOPLIST_FILE = "Homemortgagecalculator/Homemortgagecalculator-Info.plist";
@@ -395,6 +437,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homemortgagecalculator/Homemortgagecalculator-Prefix.pch";
 				INFOPLIST_FILE = "Homemortgagecalculator/Homemortgagecalculator-Info.plist";

@@ -7,8 +7,11 @@
 //
 
 #import "FormulaListViewController.h"
+#import "THVariable.h"
+#import "FormulaTableViewController.h"
 
 @interface FormulaListViewController ()
+
 
 @end
 
@@ -21,7 +24,81 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+
+    FormulaTableViewController *formulaViewController = [segue destinationViewController];
+    
+     NSMutableArray *variables = [[NSMutableArray alloc] initWithCapacity:20];
+
+    
+    if ([segue.identifier isEqualToString:@"Mortgage"]) {
+        
+        THVariable *principle = [[THVariable alloc] init];
+        principle.type = @"basic";
+        principle.name = @"Principle";
+        principle.defaultValue = @"250000";
+        [variables addObject:principle];
+
+        
+        THVariable *interest = [[THVariable alloc] init];
+        interest.type = @"basic";
+        interest.name = @"Interest";
+        interest.defaultValue = @"75%";
+        [variables addObject:interest];
+        
+        THVariable *years = [[THVariable alloc] init];
+        years.type = @"toggle";
+        years.name = @"Years";
+        years.defaultValue = @"30";
+        [variables addObject:years];
+        
+        
+        
+    }
+    else if ([segue.identifier isEqualToString:@"FrontRatio"]) {
+    
+        
+        THVariable *income = [[THVariable alloc] init];
+        income.type = @"basic";
+        income.name = @"Monthly Gross Income";
+        income.defaultValue = @"5000";
+        [variables addObject: income];
+        
+        THVariable *mortgage = [[THVariable alloc] init];
+        mortgage.type = @"basic";
+        mortgage.name = @"Monthly Mortgage";
+        mortgage.defaultValue = @"2000";
+        [variables addObject: mortgage];
+        
+    }
+    else if ([segue.identifier isEqualToString:@"BackRatio"]) {
+        
+        THVariable *income = [[THVariable alloc] init];
+        income.type = @"basic";
+        income.name = @"Monthly Gross Income";
+        income.defaultValue = @"5000";
+        [variables addObject:income];
+        
+        THVariable *mortgage = [[THVariable alloc] init];
+        mortgage.type = @"basic";
+        mortgage.name = @"Monthly Mortgage";
+        mortgage.defaultValue = @"2000";
+        [variables addObject:mortgage];
+        
+        THVariable *addCredit = [[THVariable alloc] init];
+        addCredit.type = @"add";
+        [variables addObject:addCredit];
+    }
+    
+    //this is where i send (the sender)
+    [formulaViewController setArray:variables];
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {
