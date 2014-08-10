@@ -8,7 +8,7 @@
 
 #import "FormulaListViewController.h"
 #import "THVariable.h"
-#import "FormulaTableViewController.h"
+#import "FormulaViewController.h"
 
 @interface FormulaListViewController ()
 
@@ -30,7 +30,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
-    FormulaTableViewController *formulaViewController = [segue destinationViewController];
+    FormulaViewController *formulaViewController = [segue destinationViewController];
     
      NSMutableArray *variables = [[NSMutableArray alloc] initWithCapacity:20];
 

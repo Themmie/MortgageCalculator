@@ -1,29 +1,22 @@
 //
-//  FormulaTableViewController.m
+//  FormulaViewController.m
 //  Homemortgagecalculator
 //
 //  Created by Tyler Hemmie on 7/21/14.
 //  Copyright (c) 2014 Frozen Fire Studios. All rights reserved.
 //
 
-#import "FormulaTableViewController.h"
+#import "FormulaViewController.h"
 #import "THVariable.h"
 #import "BasicTableViewCell.h"
 
-@interface FormulaTableViewController ()
+@interface FormulaViewController ()
 
 @end
 
-@implementation FormulaTableViewController
+@implementation FormulaViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
 
 
 - (void)viewDidLoad
