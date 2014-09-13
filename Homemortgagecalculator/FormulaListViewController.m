@@ -9,6 +9,7 @@
 #import "FormulaListViewController.h"
 #import "THVariable.h"
 #import "FormulaViewController.h"
+#import "UIColor+THColors.h"
 
 @interface FormulaListViewController ()
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor myTableViewBackgroundColor];
     
 }
 
@@ -33,7 +35,7 @@
     FormulaViewController *formulaViewController = [segue destinationViewController];
     
      NSMutableArray *variables = [[NSMutableArray alloc] initWithCapacity:20];
-
+    
     
     if ([segue.identifier isEqualToString:@"Mortgage"]) {
         

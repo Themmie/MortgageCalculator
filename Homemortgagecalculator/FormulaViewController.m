@@ -9,8 +9,10 @@
 #import "FormulaViewController.h"
 #import "THVariable.h"
 #import "BasicTableViewCell.h"
+#import "UIColor+THColors.h"
 
-@interface FormulaViewController ()
+
+@interface FormulaViewController () <THValueCellDelegate>
 
 @end
 
@@ -22,6 +24,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor myTableViewBackgroundColor];
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -77,6 +82,8 @@
         //I may need to add 
         [cell.titleLabel setText:part.name];
         [cell.valueTextField setText:part.defaultValue];
+        
+        [cell setDelegate:self];
      
         NSLog(@"%@",part.type);
         NSLog(@"%@",part.name);
@@ -138,6 +145,12 @@
     
 }
 
+#pragma mark - THValueCellDelegate
+
+- (void)cell:(BasicTableViewCell *)cell valueDidChange:(NSValue *)value
+{
+    NSLog(@"%@: %@",cell,value);
+}
 
 /*
 // Override to support conditional editing of the table view.
