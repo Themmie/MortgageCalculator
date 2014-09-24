@@ -14,6 +14,7 @@
 
 - (void)valueChanged:(UITextField *)textField
 {
+    NSLog(@"***** Text = %@ self.text = %@", textField.text, self.valueTextField.text);
     [self.delegate cell:self valueDidChange:@(textField.text.doubleValue)];
 }
 

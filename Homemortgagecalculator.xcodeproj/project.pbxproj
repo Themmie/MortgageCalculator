@@ -14,7 +14,6 @@
 		5D2378F019943BCB00EFB5BB /* THCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2378EF19943BCB00EFB5BB /* THCalculatorTests.m */; };
 		5D2378F219945FA600EFB5BB /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2378F119945EF100EFB5BB /* Crashlytics.framework */; };
 		5D3A5A1A19A2C6EF000D62AF /* UIColor+THColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3A5A1919A2C6EF000D62AF /* UIColor+THColors.m */; };
-		5DA5CF8C1996E2200092A57B /* FormulaInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CF8B1996E2200092A57B /* FormulaInfoViewController.m */; };
 		5DAC238C197D951100F26A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238B197D951100F26A67 /* Foundation.framework */; };
 		5DAC238E197D951100F26A67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238D197D951100F26A67 /* CoreGraphics.framework */; };
 		5DAC2390197D951100F26A67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC238F197D951100F26A67 /* UIKit.framework */; };
@@ -56,8 +55,6 @@
 		5D2378F119945EF100EFB5BB /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5D3A5A1819A2C6EF000D62AF /* UIColor+THColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+THColors.h"; sourceTree = "<group>"; };
 		5D3A5A1919A2C6EF000D62AF /* UIColor+THColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+THColors.m"; sourceTree = "<group>"; };
-		5DA5CF8A1996E2200092A57B /* FormulaInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormulaInfoViewController.h; sourceTree = "<group>"; };
-		5DA5CF8B1996E2200092A57B /* FormulaInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaInfoViewController.m; sourceTree = "<group>"; };
 		5DAC2388197D951100F26A67 /* Homemortgagecalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homemortgagecalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAC238B197D951100F26A67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DAC238D197D951100F26A67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,8 +146,6 @@
 				5DAC23A1197D951100F26A67 /* FormulaListViewController.m */,
 				5DAC2401197DE7E200F26A67 /* FormulaViewController.h */,
 				5DAC2402197DE7E200F26A67 /* FormulaViewController.m */,
-				5DA5CF8A1996E2200092A57B /* FormulaInfoViewController.h */,
-				5DA5CF8B1996E2200092A57B /* FormulaInfoViewController.m */,
 				5D1F30B81992DF0300F1074D /* BasicTableViewCell.h */,
 				5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */,
 				5D1F30BB19930B8E00F1074D /* CustomTableViewCell.h */,
@@ -298,7 +293,6 @@
 			files = (
 				5D1F30BA1992DF0300F1074D /* BasicTableViewCell.m in Sources */,
 				5D3A5A1A19A2C6EF000D62AF /* UIColor+THColors.m in Sources */,
-				5DA5CF8C1996E2200092A57B /* FormulaInfoViewController.m in Sources */,
 				5D1F30BD19930B8E00F1074D /* CustomTableViewCell.m in Sources */,
 				5D2378EE19943BA100EFB5BB /* THCalculator.m in Sources */,
 				5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */,

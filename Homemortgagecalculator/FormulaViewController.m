@@ -10,6 +10,8 @@
 #import "THVariable.h"
 #import "BasicTableViewCell.h"
 #import "UIColor+THColors.h"
+#import "THCalculator.h"
+
 
 
 @interface FormulaViewController () <THValueCellDelegate>
@@ -78,16 +80,14 @@
     
     if ([part.type  isEqual:@"basic"]) {
      
-        //not self, tableview, THVariable, part.type, UITableview,
-        //I may need to add 
         [cell.titleLabel setText:part.name];
         [cell.valueTextField setText:part.defaultValue];
         
         [cell setDelegate:self];
      
-        NSLog(@"%@",part.type);
-        NSLog(@"%@",part.name);
-        NSLog(@"%@",part.defaultValue);
+//        NSLog(@"%@",part.type);
+//        NSLog(@"%@",part.name);
+//        NSLog(@"%@",part.defaultValue);
         
     }
     
@@ -105,7 +105,7 @@
     }
     
     return cell;
-    
+                                                
 
     
     
@@ -149,7 +149,29 @@
 
 - (void)cell:(BasicTableViewCell *)cell valueDidChange:(NSValue *)value
 {
-    NSLog(@"%@: %@",cell,value);
+//    NSLog(@"%@: %@",cell,value);
+
+    NSLog(@"%d", cell.superview == self.FormulaTableView);
+    
+    BasicTableViewCell *pCell = (BasicTableViewCell *)[self.FormulaTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    
+    BasicTableViewCell *iCell = (BasicTableViewCell *)[self.FormulaTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+    
+    CGFloat p = pCell.valueTextField.text.floatValue;
+    CGFloat i = iCell.valueTextField.text.floatValue;
+
+    NSLog(@"p: %f",p);
+    NSLog(@"i: %f",i);
+
+    THCalculator *calculator = [[THCalculator alloc] init];
+
+    NSInteger solution = [calculator frontRatioForPayment:p andIncome:i];
+    
+    [self.answerLabel setText:[NSString stringWithFormat: @"%ld%%", (long)solution]];
+    
+    
+    
+
 }
 
 /*

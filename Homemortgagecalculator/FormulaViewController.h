@@ -13,4 +13,11 @@
 @property (nonatomic, strong) NSString *part;
 @property (nonatomic, strong) NSArray *array;
 
+@property (nonatomic, retain) IBOutlet UILabel *answerLabel;
+
+@property (weak, nonatomic) IBOutlet UITableView *FormulaTableView;
+
+
+
+
 @end
