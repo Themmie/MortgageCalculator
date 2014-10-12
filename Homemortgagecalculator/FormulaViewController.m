@@ -9,6 +9,7 @@
 #import "FormulaViewController.h"
 #import "THVariable.h"
 #import "BasicTableViewCell.h"
+#import "ToggleTableViewCell.h"
 #import "UIColor+THColors.h"
 #import "THCalculator.h"
 
@@ -60,7 +61,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.array count];
+    return [self.formula.variables count];
 }
 
 
@@ -69,7 +70,7 @@
 
 {
 
-    THVariable *part = [self.array objectAtIndex:indexPath.row];
+    THVariable *part = [self.formula.variables objectAtIndex:indexPath.row];
     
     
     
@@ -77,24 +78,34 @@
     //objectAtIndex:(NSUInteger)index;
     
     BasicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:part.type forIndexPath:indexPath];
+
     
     if ([part.type  isEqual:@"basic"]) {
      
         [cell.titleLabel setText:part.name];
         [cell.valueTextField setText:part.defaultValue];
-        
-        [cell setDelegate:self];
-     
+             
 //        NSLog(@"%@",part.type);
 //        NSLog(@"%@",part.name);
 //        NSLog(@"%@",part.defaultValue);
         
+        [cell setDelegate:self];
+
     }
     
     else if ([part.type isEqualToString:@"custom"]) {
-        
+        [cell setDelegate:self];
+
     }
     else if ([part.type isEqualToString:@"toggle"]) {
+        [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"15" atIndex:0 animated:NO];
+        [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"20" atIndex:1 animated:NO];
+        [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"25" atIndex:2 animated:NO];
+        [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"30" atIndex:3 animated:NO];
+        [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"40" atIndex:4 animated:NO];
+
+        [cell setDelegate:self];
+
 
     }
     else if ([part.type isEqualToString:@"add"]) {
@@ -147,80 +158,22 @@
 
 #pragma mark - THValueCellDelegate
 
-- (void)cell:(BasicTableViewCell *)cell valueDidChange:(NSValue *)value
+- (void)cell:(BasicTableViewCell *)cell valueDidChange:(NSNumber *)value
 {
 //    NSLog(@"%@: %@",cell,value);
+    
+    NSIndexPath *indexPath = [self.FormulaTableView indexPathForCell:cell];
+    THVariable *part = [self.formula.variables objectAtIndex:indexPath.row];
+    part.value = value;
 
-    NSLog(@"%d", cell.superview == self.FormulaTableView);
-    
-    BasicTableViewCell *pCell = (BasicTableViewCell *)[self.FormulaTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    
-    BasicTableViewCell *iCell = (BasicTableViewCell *)[self.FormulaTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-    
-    CGFloat p = pCell.valueTextField.text.floatValue;
-    CGFloat i = iCell.valueTextField.text.floatValue;
+//    NSLog(@"%@",self.formula.Variables);
 
-    NSLog(@"p: %f",p);
-    NSLog(@"i: %f",i);
+////    NSInteger solution = [calculator frontRatioForPayment:p andIncome:i];
+//    NSInteger solution = [calculator monthlyMortgageAmountForPrinciple:p andInterest:i andNumberOfPayments:y];
+//    [self.formula calculate]
+    [self.answerLabel setText:[NSString stringWithFormat: @"%@",[self.formula calculate]]];
 
-    THCalculator *calculator = [[THCalculator alloc] init];
-
-    NSInteger solution = [calculator frontRatioForPayment:p andIncome:i];
     
-    [self.answerLabel setText:[NSString stringWithFormat: @"%ld%%", (long)solution]];
-    
-    
-    
-
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

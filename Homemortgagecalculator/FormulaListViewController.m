@@ -10,6 +10,11 @@
 #import "THVariable.h"
 #import "FormulaViewController.h"
 #import "UIColor+THColors.h"
+#import "THFormula.h"
+#import "THMortgage.h"
+#import "THFrontRatio.h"
+#import "THBackRatio.h"
+
 
 @interface FormulaListViewController ()
 
@@ -39,6 +44,8 @@
     
     if ([segue.identifier isEqualToString:@"Mortgage"]) {
         
+        THMortgage *mortgageFormula = [[THMortgage alloc] init];
+        
         THVariable *principle = [[THVariable alloc] init];
         principle.type = @"basic";
         principle.name = @"Principle";
@@ -57,12 +64,17 @@
         years.name = @"Years";
         years.defaultValue = @"30";
         [variables addObject:years];
+
+        [mortgageFormula setVariables:@[principle, interest, years]];
         
+        [formulaViewController setFormula:mortgageFormula];
+
         
         
     }
     else if ([segue.identifier isEqualToString:@"FrontRatio"]) {
     
+        THFrontRatio *frontRatioFormula = [[THFrontRatio alloc] init];
         
         THVariable *income = [[THVariable alloc] init];
         income.type = @"basic";
@@ -76,8 +88,15 @@
         mortgage.defaultValue = @"2000";
         [variables addObject: mortgage];
         
+        [frontRatioFormula setVariables:@[income, mortgage]];
+        
+        [formulaViewController setFormula:frontRatioFormula];
+
+        
     }
     else if ([segue.identifier isEqualToString:@"BackRatio"]) {
+        
+        THBackRatio *backRatioFormula = [[THBackRatio alloc] init];
         
         THVariable *income = [[THVariable alloc] init];
         income.type = @"basic";
@@ -94,11 +113,12 @@
         THVariable *addCredit = [[THVariable alloc] init];
         addCredit.type = @"add";
         [variables addObject:addCredit];
-    }
-    
-    //this is where i send (the sender)
-    [formulaViewController setArray:variables];
+        
+        [backRatioFormula setVariables:@[income, mortgage, addCredit]];
 
+        [formulaViewController setFormula:backRatioFormula];
+
+    }
 }
 
 

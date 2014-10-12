@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "THFormula.h"
+
+
 
 @interface FormulaViewController : UIViewController
 
 @property (nonatomic, strong) NSString *part;
-@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, strong) THFormula *formula;
 
 @property (nonatomic, retain) IBOutlet UILabel *answerLabel;
 

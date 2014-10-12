@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D04AB0C19D37E000008636F /* THFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04AB0B19D37E000008636F /* THFormula.m */; };
+		5D04AB0F19D7AAFB0008636F /* THMortgage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04AB0E19D7AAFB0008636F /* THMortgage.m */; };
+		5D04AB1219D7AB260008636F /* THFrontRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04AB1119D7AB260008636F /* THFrontRatio.m */; };
+		5D04AB1519D7AB380008636F /* THBackRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04AB1419D7AB380008636F /* THBackRatio.m */; };
 		5D1F30BA1992DF0300F1074D /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */; };
 		5D1F30BD19930B8E00F1074D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30BC19930B8E00F1074D /* CustomTableViewCell.m */; };
 		5D1F30C319930BEC00F1074D /* ToggleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F30C219930BEC00F1074D /* ToggleTableViewCell.m */; };
@@ -43,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D04AB0A19D37E000008636F /* THFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THFormula.h; sourceTree = "<group>"; };
+		5D04AB0B19D37E000008636F /* THFormula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THFormula.m; sourceTree = "<group>"; };
+		5D04AB0D19D7AAFB0008636F /* THMortgage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMortgage.h; sourceTree = "<group>"; };
+		5D04AB0E19D7AAFB0008636F /* THMortgage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMortgage.m; sourceTree = "<group>"; };
+		5D04AB1019D7AB260008636F /* THFrontRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THFrontRatio.h; sourceTree = "<group>"; };
+		5D04AB1119D7AB260008636F /* THFrontRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THFrontRatio.m; sourceTree = "<group>"; };
+		5D04AB1319D7AB380008636F /* THBackRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBackRatio.h; sourceTree = "<group>"; };
+		5D04AB1419D7AB380008636F /* THBackRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBackRatio.m; sourceTree = "<group>"; };
 		5D1F30B81992DF0300F1074D /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
 		5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
 		5D1F30BB19930B8E00F1074D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -146,6 +158,14 @@
 				5DAC23A1197D951100F26A67 /* FormulaListViewController.m */,
 				5DAC2401197DE7E200F26A67 /* FormulaViewController.h */,
 				5DAC2402197DE7E200F26A67 /* FormulaViewController.m */,
+				5D04AB0A19D37E000008636F /* THFormula.h */,
+				5D04AB0B19D37E000008636F /* THFormula.m */,
+				5D04AB0D19D7AAFB0008636F /* THMortgage.h */,
+				5D04AB0E19D7AAFB0008636F /* THMortgage.m */,
+				5D04AB1019D7AB260008636F /* THFrontRatio.h */,
+				5D04AB1119D7AB260008636F /* THFrontRatio.m */,
+				5D04AB1319D7AB380008636F /* THBackRatio.h */,
+				5D04AB1419D7AB380008636F /* THBackRatio.m */,
 				5D1F30B81992DF0300F1074D /* BasicTableViewCell.h */,
 				5D1F30B91992DF0300F1074D /* BasicTableViewCell.m */,
 				5D1F30BB19930B8E00F1074D /* CustomTableViewCell.h */,
@@ -293,9 +313,13 @@
 			files = (
 				5D1F30BA1992DF0300F1074D /* BasicTableViewCell.m in Sources */,
 				5D3A5A1A19A2C6EF000D62AF /* UIColor+THColors.m in Sources */,
+				5D04AB1219D7AB260008636F /* THFrontRatio.m in Sources */,
 				5D1F30BD19930B8E00F1074D /* CustomTableViewCell.m in Sources */,
 				5D2378EE19943BA100EFB5BB /* THCalculator.m in Sources */,
+				5D04AB0C19D37E000008636F /* THFormula.m in Sources */,
+				5D04AB0F19D7AAFB0008636F /* THMortgage.m in Sources */,
 				5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */,
+				5D04AB1519D7AB380008636F /* THBackRatio.m in Sources */,
 				5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */,
 				5D1F30C319930BEC00F1074D /* ToggleTableViewCell.m in Sources */,
 				5DAC2403197DE7E200F26A67 /* FormulaViewController.m in Sources */,

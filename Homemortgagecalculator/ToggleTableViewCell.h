@@ -13,4 +13,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *toggleControl;
 
 
+- (IBAction)segmentChanged:(UISegmentedControl *)sender;
+
+
 @end
