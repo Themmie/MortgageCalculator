@@ -17,4 +17,5 @@
     [self.delegate cell:self valueDidChange:@(textField.text.doubleValue)];
 }
 
+
 @end

@@ -34,6 +34,7 @@
 		5DAC23B7197D951100F26A67 /* HomemortgagecalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC23B6197D951100F26A67 /* HomemortgagecalculatorTests.m */; };
 		5DAC2403197DE7E200F26A67 /* FormulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC2402197DE7E200F26A67 /* FormulaViewController.m */; };
 		5DAC24061981B5AF00F26A67 /* THVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC24051981B5AF00F26A67 /* THVariable.m */; };
+		5DBB7B7E19F0870900270547 /* AddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBB7B7D19F0870900270547 /* AddTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		5DAC2402197DE7E200F26A67 /* FormulaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaViewController.m; sourceTree = "<group>"; };
 		5DAC24041981B5AF00F26A67 /* THVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVariable.h; sourceTree = "<group>"; };
 		5DAC24051981B5AF00F26A67 /* THVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVariable.m; sourceTree = "<group>"; };
+		5DBB7B7C19F0870900270547 /* AddTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewCell.h; sourceTree = "<group>"; };
+		5DBB7B7D19F0870900270547 /* AddTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				5DAC23A1197D951100F26A67 /* FormulaListViewController.m */,
 				5DAC2401197DE7E200F26A67 /* FormulaViewController.h */,
 				5DAC2402197DE7E200F26A67 /* FormulaViewController.m */,
+				5DAC24041981B5AF00F26A67 /* THVariable.h */,
+				5DAC24051981B5AF00F26A67 /* THVariable.m */,
 				5D04AB0A19D37E000008636F /* THFormula.h */,
 				5D04AB0B19D37E000008636F /* THFormula.m */,
 				5D04AB0D19D7AAFB0008636F /* THMortgage.h */,
@@ -172,8 +177,8 @@
 				5D1F30BC19930B8E00F1074D /* CustomTableViewCell.m */,
 				5D1F30C119930BEC00F1074D /* ToggleTableViewCell.h */,
 				5D1F30C219930BEC00F1074D /* ToggleTableViewCell.m */,
-				5DAC24041981B5AF00F26A67 /* THVariable.h */,
-				5DAC24051981B5AF00F26A67 /* THVariable.m */,
+				5DBB7B7C19F0870900270547 /* AddTableViewCell.h */,
+				5DBB7B7D19F0870900270547 /* AddTableViewCell.m */,
 				5D2378EC19943B7A00EFB5BB /* THCalculator.h */,
 				5D2378ED19943BA100EFB5BB /* THCalculator.m */,
 				5D3A5A1819A2C6EF000D62AF /* UIColor+THColors.h */,
@@ -320,6 +325,7 @@
 				5D04AB0F19D7AAFB0008636F /* THMortgage.m in Sources */,
 				5DAC23A2197D951100F26A67 /* FormulaListViewController.m in Sources */,
 				5D04AB1519D7AB380008636F /* THBackRatio.m in Sources */,
+				5DBB7B7E19F0870900270547 /* AddTableViewCell.m in Sources */,
 				5DAC239C197D951100F26A67 /* AppDelegate.m in Sources */,
 				5D1F30C319930BEC00F1074D /* ToggleTableViewCell.m in Sources */,
 				5DAC2403197DE7E200F26A67 /* FormulaViewController.m in Sources */,

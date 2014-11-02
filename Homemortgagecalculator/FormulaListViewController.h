@@ -10,4 +10,6 @@
 
 @interface FormulaListViewController : UITableViewController
 
+//@property (strong, nonatomic) NSMutableArray *mortgageFormula;
+
 @end

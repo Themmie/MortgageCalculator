@@ -10,7 +10,7 @@
 
 @interface THFormula : NSObject
 
-@property (strong, nonatomic) NSArray *variables;
+@property (strong, nonatomic) NSMutableArray *variables;
 
 - (NSNumber *)calculate;
 

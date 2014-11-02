@@ -48,6 +48,7 @@
     }
 }
 
+
 -(NSNumber *)calculate {
     
     NSNumber *income = [self declareIncome];

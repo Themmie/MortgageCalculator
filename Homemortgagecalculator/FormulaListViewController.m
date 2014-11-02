@@ -15,9 +15,7 @@
 #import "THFrontRatio.h"
 #import "THBackRatio.h"
 
-
 @interface FormulaListViewController ()
-
 
 @end
 
@@ -39,7 +37,6 @@
 
     FormulaViewController *formulaViewController = [segue destinationViewController];
     
-     NSMutableArray *variables = [[NSMutableArray alloc] initWithCapacity:20];
     
     
     if ([segue.identifier isEqualToString:@"Mortgage"]) {
@@ -50,22 +47,19 @@
         principle.type = @"basic";
         principle.name = @"Principle";
         principle.defaultValue = @"250000";
-        [variables addObject:principle];
 
         
         THVariable *interest = [[THVariable alloc] init];
         interest.type = @"basic";
         interest.name = @"Interest";
         interest.defaultValue = @"75%";
-        [variables addObject:interest];
         
         THVariable *years = [[THVariable alloc] init];
         years.type = @"toggle";
         years.name = @"Years";
         years.defaultValue = @"30";
-        [variables addObject:years];
 
-        [mortgageFormula setVariables:@[principle, interest, years]];
+        [mortgageFormula setVariables:[@[principle, interest, years] mutableCopy]];
         
         [formulaViewController setFormula:mortgageFormula];
 
@@ -80,15 +74,14 @@
         income.type = @"basic";
         income.name = @"Monthly Gross Income";
         income.defaultValue = @"5000";
-        [variables addObject: income];
         
         THVariable *mortgage = [[THVariable alloc] init];
         mortgage.type = @"basic";
         mortgage.name = @"Monthly Mortgage";
         mortgage.defaultValue = @"2000";
-        [variables addObject: mortgage];
         
-        [frontRatioFormula setVariables:@[income, mortgage]];
+//        [frontRatioFormula setVariables:@[income, mortgage]];
+        [frontRatioFormula setVariables:[@[income, mortgage] mutableCopy]];
         
         [formulaViewController setFormula:frontRatioFormula];
 
@@ -102,19 +95,16 @@
         income.type = @"basic";
         income.name = @"Monthly Gross Income";
         income.defaultValue = @"5000";
-        [variables addObject:income];
         
         THVariable *mortgage = [[THVariable alloc] init];
         mortgage.type = @"basic";
         mortgage.name = @"Monthly Mortgage";
         mortgage.defaultValue = @"2000";
-        [variables addObject:mortgage];
         
         THVariable *addCredit = [[THVariable alloc] init];
         addCredit.type = @"add";
-        [variables addObject:addCredit];
         
-        [backRatioFormula setVariables:@[income, mortgage, addCredit]];
+        [backRatioFormula setVariables:[@[income, mortgage, addCredit] mutableCopy]];
 
         [formulaViewController setFormula:backRatioFormula];
 
