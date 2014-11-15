@@ -95,15 +95,18 @@
         income.type = @"basic";
         income.name = @"Monthly Gross Income";
         income.defaultValue = @"5000";
+        income.value = @5000;
         
         THVariable *mortgage = [[THVariable alloc] init];
         mortgage.type = @"basic";
         mortgage.name = @"Monthly Mortgage";
         mortgage.defaultValue = @"2000";
+        mortgage.value = @2000;
         
         THVariable *addCredit = [[THVariable alloc] init];
         addCredit.type = @"add";
-        
+# warning I added a vale to the addCell to allow the keyPath i have in the backRatio calculate method work... just temporary I guess and i set up some defaults...I also changed the default string in the storyboard for the protoType cell
+        addCredit.value = @0;
         [backRatioFormula setVariables:[@[income, mortgage, addCredit] mutableCopy]];
 
         [formulaViewController setFormula:backRatioFormula];

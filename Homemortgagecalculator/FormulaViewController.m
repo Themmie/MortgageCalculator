@@ -9,6 +9,7 @@
 #import "FormulaViewController.h"
 #import "THVariable.h"
 #import "BasicTableViewCell.h"
+#import "CustomTableViewCell.h"
 #import "ToggleTableViewCell.h"
 #import "AddTableViewCell.h"
 #import "UIColor+THColors.h"
@@ -96,7 +97,8 @@
     
     else if ([part.type isEqualToString:@"custom"]) {
         
-        BasicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:part.type forIndexPath:indexPath];
+        CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:part.type forIndexPath:indexPath];
+        
         
         [cell setDelegate:self];
         
@@ -123,13 +125,12 @@
     else if ([part.type isEqualToString:@"add"]) {
         AddTableViewCell *addCell = [tableView dequeueReusableCellWithIdentifier:part.type forIndexPath:indexPath];
 
+//        addCell.userInteractionEnabled = YES;
+//        addCell.selectionStyle = UITableViewCellSelectionStyleBlue;
+
+//        [addCell setDelegate:self];
+
         
-
-        addCell.userInteractionEnabled = YES;
-        addCell.selectionStyle = UITableViewCellSelectionStyleBlue;
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//        cell.userInteractionEnabled = NO;
-
         return addCell;
         
     }
@@ -218,25 +219,18 @@
         
         THVariable *newVariable = [[THVariable alloc] init];
         newVariable.type = @"custom";
+        newVariable.defaultValue = @"0";
+#warning MAKING THIS 0 AS WELL AND I AMDE DEFAULT 0 NOT THAT IT REALLY MATTERS
+        newVariable.value = @0;
+
         
-        [self.formula.variables addObject:newVariable];
+        [self.formula.variables insertObject:newVariable atIndex:([self.formula.variables count]- 1)];
         
         NSLog(@"%@",self.formula.variables);
-        NSIndexPath *path1 = [NSIndexPath indexPathForRow:0 inSection:0];
-        NSIndexPath *path2 = [NSIndexPath indexPathForRow:1 inSection:0];
-        NSIndexPath *path3 = [NSIndexPath indexPathForRow:2 inSection:0];
-        NSIndexPath *path4 = [NSIndexPath indexPathForRow:3 inSection:0];
-        
-        NSArray *indexArray1 = [NSArray arrayWithObjects:path1,path2,path3, nil];
-        NSArray *indexArray2 = [NSArray arrayWithObjects:path1, path2, path3, path4, nil];
-        
-        
-        [self.FormulaTableView beginUpdates];
-        [self.FormulaTableView insertRowsAtIndexPaths:indexArray2 withRowAnimation:UITableViewRowAnimationRight];
-        [self.FormulaTableView deleteRowsAtIndexPaths:indexArray1 withRowAnimation:UITableViewRowAnimationLeft];
-        [self.FormulaTableView endUpdates];
-                NSLog(@"lol");
 
+        NSIndexPath *newIndex = [NSIndexPath indexPathForRow:([self.formula.variables count]- 2) inSection:0];
+ 
+        [self.FormulaTableView insertRowsAtIndexPaths:@[newIndex] withRowAnimation:UITableViewRowAnimationRight];
     }
 
 }
@@ -260,7 +254,6 @@
 //    [self.formula calculate]
     [self.answerLabel setText:[NSString stringWithFormat: @"%@",[self.formula calculate]]];
 
-    
 }
 
 @end

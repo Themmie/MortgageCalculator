@@ -16,7 +16,7 @@
 
 @implementation THMortgage
 
-- (NSNumber *)declarePrinciple {
+- (NSNumber *)collectPrinciple {
     
     THVariable *principleVariable = [self.variables objectAtIndex:0];
     
@@ -39,7 +39,7 @@
     
 }
 
-- (NSNumber *)declareInterest {
+- (NSNumber *)collectInterest {
     
     THVariable *interestVariable = [self.variables objectAtIndex:1];
     
@@ -62,7 +62,7 @@
     
 }
 
-- (NSNumber *)declareYears {
+- (NSNumber *)collectYears {
     
     THVariable *yearsVariable = [self.variables objectAtIndex:2];
     
@@ -103,9 +103,9 @@
 //
 //    }
 //    
-    NSNumber *principle = [self declarePrinciple];
-    NSNumber *interest = [self declareInterest];
-    NSNumber *years = [self declareYears];
+    NSNumber *principle = [self collectPrinciple];
+    NSNumber *interest = [self collectInterest];
+    NSNumber *years = [self collectYears];
 
 //    NSLog(@"%@",principleVariable.value);
 //    NSLog(@"%@",interestVariable.value);

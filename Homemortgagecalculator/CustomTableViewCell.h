@@ -9,6 +9,12 @@
 #import "BasicTableViewCell.h"
 
 @interface CustomTableViewCell : BasicTableViewCell
+
+@property (weak, nonatomic) id <THValueCellDelegate> delegate;
+
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+
+
+- (IBAction)valueChanged:(UITextField *)textField;
 
 @end

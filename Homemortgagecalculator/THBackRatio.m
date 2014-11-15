@@ -14,7 +14,7 @@
 
 @implementation THBackRatio
 
-- (NSNumber *)declareIncome {
+- (NSNumber *)collectIncome {
     
     THVariable *incomeVariable = [self.variables objectAtIndex:0];
     
@@ -32,7 +32,7 @@
     
 }
 
-- (NSNumber *)declareMortgage {
+- (NSNumber *)collectMortgage {
     
     THVariable *mortgageVariable = [self.variables objectAtIndex:1];
     
@@ -48,17 +48,67 @@
     }
 }
 
+- (NSNumber *)collectOtherCredit {
 
--(NSNumber *)calculate {
+    if ([self.variables count] > 3) {
+        
+        THVariable *otherCreditVariable = [self.variables objectAtIndex:2];
+        
+        if (otherCreditVariable.value == nil) {
+            NSNumber *otherCredit = @([otherCreditVariable.defaultValue integerValue]);
+            
+            return otherCredit;
+        }
+        else {
+            NSNumber *otherCredit = otherCreditVariable.value;
+            
+            return otherCredit;
+        }
+    }
+    return nil;
+}
+
+- (NSNumber *)calculate {
+   
+    __block CGFloat otherCreditsValue = 0.0;
+    [self.variables enumerateObjectsUsingBlock:^(THVariable *variable, NSUInteger idx, BOOL *stop) {
+        if ([variable.type isEqualToString:@"custom"]) {
+            otherCreditsValue += variable.value.floatValue;
+            
+        }
+    }];
+    NSLog(@"OtherCredits: %f",otherCreditsValue);
     
-    NSNumber *income = [self declareIncome];
-    NSNumber *mortgage = [self declareMortgage];
+    NSNumber *income = [self collectIncome];
+    NSNumber *mortgage = [self collectMortgage];
+    NSNumber *otherCredit = [NSNumber numberWithFloat:otherCreditsValue];
+
+    
+//    __block CGFloat otherCreditsValue = 0.0;
+//    [self.variables enumerateObjectsUsingBlock:^(THVariable *variable, NSUInteger idx, BOOL *stop) {
+//        if ([variable.type isEqualToString:@"custom"]) {
+//            otherCreditsValue += variable.value.floatValue;
+//        }
+//    }];
+//    NSLog(@"OtherCredits: %f",otherCreditsValue);
+    
+//    NSMutableArray *defaultValues = [self.variables valueForKeyPath:@"value"];
+//    
+////    change to float for use
+//    float incomeFLoat = [income floatValue];
+//    
+//    float total = 0;
+//    for(NSString *str in defaultValues)
+//    {
+//        total += [str floatValue];
+//        
+//        NSLog(@"%f",(total - incomeFLoat)/incomeFLoat);
+//    }
+//    
+//    //        return payment/income*100;
     
     
-    //        return payment/income*100;
-    
-    
-    return @(mortgage.floatValue/income.floatValue);
+    return @(((mortgage.floatValue+otherCredit.floatValue)/income.floatValue));
 }
 
 @end

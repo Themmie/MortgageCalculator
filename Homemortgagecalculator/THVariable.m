@@ -10,9 +10,9 @@
 
 @implementation THVariable
 
-//- (NSString *)description {
-//    return [NSString stringWithFormat:@"%@:%@",self.name,self.value];
-//}
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@:%@",self.name,self.value];
+}
 
 
 @end

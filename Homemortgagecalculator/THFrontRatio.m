@@ -14,7 +14,7 @@
 
 @implementation THFrontRatio
 
-- (NSNumber *)declareIncome {
+- (NSNumber *)collectIncome {
     
     THVariable *incomeVariable = [self.variables objectAtIndex:0];
     
@@ -32,7 +32,7 @@
 
 }
 
-- (NSNumber *)declareMortgage {
+- (NSNumber *)collectMortgage {
     
     THVariable *mortgageVariable = [self.variables objectAtIndex:1];
     
@@ -50,8 +50,8 @@
 
 -(NSNumber *)calculate {
     
-    NSNumber *income = [self declareIncome];
-    NSNumber *mortgage = [self declareMortgage];
+    NSNumber *income = [self collectIncome];
+    NSNumber *mortgage = [self collectMortgage];
     
 
 //        return payment/income*100;
