@@ -37,6 +37,18 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+//    [_FormulaTableView setFrame:CGRectMake(self.FormulaTableView.frame.origin.x, self.tblView.frame.origin.y, self.tblView.frame.size.width, self.tblView.frame.size.height - 190);
+//    NSIndexPath *indexPath =[NSIndexPath indexPathForRow:nIndex inSection:nSectionIndex];
+//    [self.tblView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+
+}
+
+- (void)keyboardWillChange:(NSNotification *)notification
+{
+    CGFloat height = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
+
+    [self.FormulaTableView setContentInset:UIEdgeInsetsMake(0, 0, height, 0)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +95,7 @@
         
         [cell.titleLabel setText:part.name];
         [cell.valueTextField setText:part.defaultValue];
+        [cell.valueTextField setKeyboardType:UIKeyboardTypeDecimalPad];
              
 //        NSLog(@"%@",part.type);
 //        NSLog(@"%@",part.name);
@@ -98,7 +111,7 @@
     else if ([part.type isEqualToString:@"custom"]) {
         
         CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:part.type forIndexPath:indexPath];
-        
+        [cell.valueTextField setKeyboardType:UIKeyboardTypeDecimalPad];
         
         [cell setDelegate:self];
         
@@ -222,7 +235,6 @@
         THVariable *newVariable = [[THVariable alloc] init];
         newVariable.type = @"custom";
         newVariable.defaultValue = @"0";
-#warning MAKING THIS 0 AS WELL AND I AMDE DEFAULT 0 NOT THAT IT REALLY MATTERS
         newVariable.value = @0;
 
         
