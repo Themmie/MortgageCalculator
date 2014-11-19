@@ -105,7 +105,6 @@
         
         THVariable *addCredit = [[THVariable alloc] init];
         addCredit.type = @"add";
-# warning I added a vale to the addCell to allow the keyPath i have in the backRatio calculate method work... just temporary I guess and i set up some defaults...I also changed the default string in the storyboard for the protoType cell
         addCredit.value = @0;
         [backRatioFormula setVariables:[@[income, mortgage, addCredit] mutableCopy]];
 

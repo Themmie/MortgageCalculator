@@ -116,6 +116,8 @@
         [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"25" atIndex:2 animated:NO];
         [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"30" atIndex:3 animated:NO];
         [[(ToggleTableViewCell *)cell toggleControl] insertSegmentWithTitle:@"40" atIndex:4 animated:NO];
+        [[(ToggleTableViewCell *)cell toggleControl] setSelectedSegmentIndex:3];
+        
 
         [cell setDelegate:self];
 
